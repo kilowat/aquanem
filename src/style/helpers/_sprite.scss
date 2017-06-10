@@ -1,0 +1,95 @@
+$ic-left-arrow-name: 'ic-left-arrow';
+$ic-left-arrow-x: 0px;
+$ic-left-arrow-y: 0px;
+$ic-left-arrow-offset-x: 0px;
+$ic-left-arrow-offset-y: 0px;
+$ic-left-arrow-width: 25px;
+$ic-left-arrow-height: 46px;
+$ic-left-arrow-total-width: 70px;
+$ic-left-arrow-total-height: 55px;
+$ic-left-arrow-image: '../images/sprite.png';
+$ic-left-arrow: (0px, 0px, 0px, 0px, 25px, 46px, 70px, 55px, '../images/sprite.png', 'ic-left-arrow', );
+$ic-point-name: 'ic-point';
+$ic-point-x: 50px;
+$ic-point-y: 20px;
+$ic-point-offset-x: -50px;
+$ic-point-offset-y: -20px;
+$ic-point-width: 13px;
+$ic-point-height: 18px;
+$ic-point-total-width: 70px;
+$ic-point-total-height: 55px;
+$ic-point-image: '../images/sprite.png';
+$ic-point: (50px, 20px, -50px, -20px, 13px, 18px, 70px, 55px, '../images/sprite.png', 'ic-point', );
+$ic-right-arrow-name: 'ic-right-arrow';
+$ic-right-arrow-x: 25px;
+$ic-right-arrow-y: 0px;
+$ic-right-arrow-offset-x: -25px;
+$ic-right-arrow-offset-y: 0px;
+$ic-right-arrow-width: 25px;
+$ic-right-arrow-height: 46px;
+$ic-right-arrow-total-width: 70px;
+$ic-right-arrow-total-height: 55px;
+$ic-right-arrow-image: '../images/sprite.png';
+$ic-right-arrow: (25px, 0px, -25px, 0px, 25px, 46px, 70px, 55px, '../images/sprite.png', 'ic-right-arrow', );
+$ic-search-name: 'ic-search';
+$ic-search-x: 50px;
+$ic-search-y: 0px;
+$ic-search-offset-x: -50px;
+$ic-search-offset-y: 0px;
+$ic-search-width: 20px;
+$ic-search-height: 20px;
+$ic-search-total-width: 70px;
+$ic-search-total-height: 55px;
+$ic-search-image: '../images/sprite.png';
+$ic-search: (50px, 0px, -50px, 0px, 20px, 20px, 70px, 55px, '../images/sprite.png', 'ic-search', );
+$we-name: 'we';
+$we-x: 0px;
+$we-y: 46px;
+$we-offset-x: 0px;
+$we-offset-y: -46px;
+$we-width: 9px;
+$we-height: 9px;
+$we-total-width: 70px;
+$we-total-height: 55px;
+$we-image: '../images/sprite.png';
+$we: (0px, 46px, 0px, -46px, 9px, 9px, 70px, 55px, '../images/sprite.png', 'we', );
+$spritesheet-width: 70px;
+$spritesheet-height: 55px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($ic-left-arrow, $ic-point, $ic-right-arrow, $ic-search, $we, );
+$spritesheet: (70px, 55px, '../images/sprite.png', $spritesheet-sprites, );
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

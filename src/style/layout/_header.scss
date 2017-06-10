@@ -1,0 +1,86 @@
+header{
+  background: url(#{$img}/header-bg-2.jpg) top right no-repeat, url(#{$img}/header-bg.png);
+  .wrapper{
+    height: 590px;
+    .top-block{
+      @include container;
+      padding-top: 27px;
+      .search-block{
+        float: left;
+        width: 41%;
+        text-align: left;
+        .address-line{
+          font-weight: 300;
+          font-size: 0.8rem;
+          i{
+            margin-right: 5px;
+          }
+        }
+      }
+      .logo-block{
+        float: left;
+        width: 18%;
+        text-align: center;
+        padding-top: 21px;
+        .logo-text{
+          font-size: 0.9rem;
+          margin-top: 3px;
+          font-weight: 300;
+          color: #3888c7;
+        }
+      }
+      .phone-block{
+        float: right;
+        width: 41%;
+        text-align: right;
+        .work-time-wrapper{
+          .work-time{
+            height: 28px;
+            background-color: #ccc;
+            width: 75px;
+            display: inline-block;
+          }
+        }
+        .phone-wrapper{
+          @include clearfix;
+          margin-top: 10px;
+          width: 78%;
+          float: right;
+          .phone-number{
+            float: left;
+            width: 44%;
+            .phone-item{
+              span{
+                font-weight: 300;
+              }
+              &:first-child{
+                margin-bottom: 5px;
+              }
+            }
+          }
+          .callback-block{
+            float: right;
+            width: 50%;
+            .callback-btn{
+              width: 160px;
+              box-sizing: border-box;
+              height: 38px;
+              border: 1px solid #3888c7;
+              background-color: transparent;
+              border-radius: 15px;
+              color: #3888c7;
+              font-size: 0.9rem;
+              font-weight: 300;
+              cursor: pointer;
+              &:hover{
+                background-color: #e94d24;
+                border: 1px solid #e94d24;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

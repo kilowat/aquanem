@@ -1,0 +1,22 @@
+html{
+  font-size: $font-size;
+  font-family: $font-opensans;
+  line-height: $base-line-height;
+}
+body{
+  margin: 0;
+}
+.wrapper{
+  margin: auto;
+  padding-left: $margin-wrapper;
+  padding-right: $margin-wrapper;
+  max-width: $max-width;
+  min-width: $min-width;
+}
+i{
+  display: inline-block;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}

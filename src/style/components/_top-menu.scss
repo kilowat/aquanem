@@ -1,0 +1,48 @@
+.top-menu-block{
+  margin-top:35px;
+  margin-bottom: 34px;
+  >ul{
+    height: 37px;
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
+    a{
+      text-decoration: none;
+    }
+    >li{
+      vertical-align: middle;
+      display: table-cell;
+      text-align: center;
+      >a{
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #0b4e78;
+        font-size: 0.95rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        &:hover, &.selected{
+          color: #4c91cb;
+          border: 1px solid #3888c7;
+          border-radius: 15px;
+          padding-left: 19px;
+          padding-right: 19px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+        }
+      }
+      ul{
+        display: none;
+        li{
+          >a{
+
+          }
+        }
+      }
+    }
+  }
+}
