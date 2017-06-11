@@ -1,0 +1,32 @@
+.work-company{
+  .work-company-list{
+    @include container;
+    .item{
+      margin-bottom: 60px;
+      @include clearfix;
+      @include span(1 of 2 0.01);
+      &:nth-child(even){
+        @include last;
+      }
+      .pic{
+        float: left;
+        width: 16%;
+        padding-left: 5%;
+      }
+      .item-content{
+        float: right;
+        width: 77%;
+        .name{
+          margin-bottom: 7px;
+          line-height: 1.1;
+          font-size: 1.1rem;
+        }
+        .text{
+          font-weight: 300;
+          font-size: 0.9rem;
+          line-height: 1.1rem;
+        }
+      }
+    }
+  }
+}

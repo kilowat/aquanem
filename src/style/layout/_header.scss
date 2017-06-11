@@ -1,7 +1,6 @@
 header{
   background: url(#{$img}/header-bg-2.jpg) top right no-repeat, url(#{$img}/header-bg.png);
   .wrapper{
-    height: 590px;
     .top-block{
       @include container;
       padding-top: 27px;
@@ -36,7 +35,6 @@ header{
         .work-time-wrapper{
           .work-time{
             height: 28px;
-            background-color: #ccc;
             width: 75px;
             display: inline-block;
           }

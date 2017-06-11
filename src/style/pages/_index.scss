@@ -1,0 +1,26 @@
+.about-block{
+  @include clearfix;
+  margin-top: 30px;
+  margin-bottom: 23px;
+  .video-block{
+    float: left;
+    width: 43%;
+    .video-frame{
+      width: 100%;
+      height: 290px;
+      background-color: #ccc;
+    }
+  }
+  .about-content{
+    float: right;
+    width: 54%;
+    .about-text{
+      font-weight: 300;
+      font-size: 0.9rem;
+      p{
+        line-height: 1.2rem;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

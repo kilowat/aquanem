@@ -1,4 +1,180 @@
 {% extends './../layouts/master.html' %}
+
+{% block slider %}
+<!--start component slider-->
+<div class="wrapper">
+  <div class="slider-block">
+    <div class="bx-slider-container">
+      <div class="slider-main">
+        <div class="slide" style="background-image:url(./images/slide-1.jpg)">
+          <div class="slider-text">
+            При заказе установки
+      			очистительного КОМПЛЕКСА
+      			«УГОЛЬНЫЙ ЗВЕРЬ 3000»
+      			<b>БУРЕНИЕ СКВАЖИНЫ</b> НА
+      			ВАШЕМ УЧАСТКЕ  <b class='text-red'>БЕСПЛАТНО!</b>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-form">
+      <div class="slider-form-title">Закажите бесплатную<br>консультацию инженера<br>по водоподготовке!
+      </div>
+      <div class="main-form-wrapper">
+        <form class="" action="" method="post">
+          <div class="row">
+            <input type="text" class="form-input" name="" value="" placeholder="Как вас зовут?">
+          </div>
+          <div class="row">
+            <input type="text" class="form-input" name="" value="" placeholder="Номер телефона">
+          </div>
+          <div class="row">
+            <input type="text" class="form-input" placeholder="E-mail" name="" value="">
+          </div>
+          <div class="row">
+            <textarea class="form-input" placeholder="Подробности" name=""></textarea>
+          </div>
+          <div class="row button-row">
+            <button type="submit" class="make-order-btn" name="button">Заказать</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end component slider-->
+{% endblock %}
+
 {% block content %}
 
+  <!--start block about-->
+  <div class="wrapper about-block">
+    <div class="video-block">
+      <div class="video-frame">
+
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Компания «Акванем» предоставляет комплекс услуг по водоподготовке (водоочистке) и водоснабжению для загородных домов, коттеджей, бассейнов, гостиниц. А так же для различных предприятий промышленности – котельных, для производств по изготовлению и розливу воды, безалкогольных и алкогольных напитков, молзаводов и т. п.
+        </p><p>
+        Компания «Акванем» активно работает по Краснодарскому краю и р. Адыгея, так же нам интересны Крым и Ростовская область.
+        Для решения сложных вопросов в области очистки воды компания использует лучшие зарубежные и отечественные разработки, а также собственный опыт полученный при работе с промышленными предприятиями Краснодарского края и р. Адыгея, гостиничными комплексами Черноморского побережья и р.Крым, частными домовладениями Краснодара, пригорода, Краснодарского края.</p>
+      </div>
+      <div>
+        <a href="#" title="" class="detail-btn">Подробнее <i class="ic-arrow"></i></a>
+      </div>
+    </div>
+  </div>
+  <!--end block about-->
+
+  <!--start component work company-->
+  <div class="work-company">
+    <div class="wrapper">
+      <h2 class="block-header">РАБОТА НАШЕЙ КОМПАНИИ СВОДИТСЯ<br>
+    К ШЕСТИ ОСНОВНЫМ ЭТАПАМ</h2>
+      <div class="work-company-list">
+
+        <div class="item">
+          <div class="pic">
+            <img src="./images/work-company-1.png" alt="">
+          </div>
+          <div class="item-content">
+            <div class="name">
+              Знакомство с нами или<br>Ваше обращение к нам
+            </div>
+            <div class="text">
+            Работа начинается уже с первого контакта. Вы рассказываете о своей проблеме с водой, показываете место, мы предлагаем варианты решения по очистке.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="pic">
+            <img src="./images/work-company-2.png" alt="">
+          </div>
+          <div class="item-content">
+            <div class="name">
+              Работы по монтажу очистной<br>
+              системы и насосной станции
+            </div>
+            <div class="text">
+          После того, как вся техническая часть подобрана и согласована, мы доставляем её на место установки и производим все технические работы.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="pic">
+            <img src="./images/work-company-3.png" alt="">
+          </div>
+          <div class="item-content">
+            <div class="name">
+            Анализ воды или бурение<br>
+  скважины на анализ
+            </div>
+            <div class="text">
+        Работа начинается уже с первого контакта. Вы рассказываете о своей проблеме с водой, показываете место, мы предлагаем варианты решения по очистке.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="pic">
+            <img src="./images/work-company-4.png" alt="">
+          </div>
+          <div class="item-content">
+            <div class="name">
+            Пуско-наладочные работы,<br>
+  тестирование и сдача объекта
+            </div>
+            <div class="text">
+        По окончании монтажа системы производится её промывка, тестовый запуск, проверки герметичности и в конце ввод в эксплуатацию и сдача объекта заказчику.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="pic">
+            <img src="./images/work-company-5.png" alt="">
+          </div>
+          <div class="item-content">
+            <div class="name">
+          Подбор оборудования и<br>
+  просчет вариантов сметы
+            </div>
+            <div class="text">
+        После того, как все вводные данные предельно ясны, мы приступаем к подбору вариантов оборудования и просчёту сметы объекта.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="pic">
+            <img src="./images/work-company-6.png" alt="">
+          </div>
+          <div class="item-content">
+            <div class="name">
+        Сервисное обслуживание<br>
+  сданного объекта
+            </div>
+            <div class="text">
+        Когда объект готов и сдан в эксплуатацию, мы берем на себя его регулярное обслуживание, замену фильтрующих элементов, профилактику и ремонт.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--end component work company-->
+
+  <!--start compnoent last portfolio-->
+  <div class="last-portfolio">
+    <div class="wrapper">
+      <h2 class="block-header">ПОСЛЕДНИЕ СДАННЫЕ ОБЪЕКТЫ</h2>
+    </div>
+  </div>
+  <!--end component last portfolio-->
 {% endblock %}

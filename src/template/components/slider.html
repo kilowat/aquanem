@@ -1,0 +1,38 @@
+<!--start component slider-->
+<div class="slider-block">
+  <div class="bx-slider-container">
+    <div class="slider-main">
+      {% for item in slider %}
+      <div class="slide" style="background-image:url({{ item.img }})">
+        <div class="slider-text">
+        {{ item.text }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="slider-form">
+    <div class="slider-form-title">Закажите бесплатную<br>консультацию инженера<br>по водоподготовке!
+    </div>
+    <div class="main-form-wrapper">
+      <form class="" action="" method="post">
+        <div class="row">
+          <input type="text" class="form-input" name="" value="" placeholder="Как вас зовут?">
+        </div>
+        <div class="row">
+          <input type="text" class="form-input" name="" value="" placeholder="Номер телефона">
+        </div>
+        <div class="row">
+          <input type="text" class="form-input" placeholder="E-mail" name="" value="">
+        </div>
+        <div class="row">
+          <textarea class="form-input" placeholder="Подробности" name=""></textarea>
+        </div>
+        <div class="row button-row">
+          <button type="submit" class="make-order-btn" name="button">Заказать</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--end component slider-->
