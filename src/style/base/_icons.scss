@@ -7,3 +7,6 @@
 .ic-arrow{
   @include sprite($ic-arrow);
 }
+.ic-view-count{
+  @include sprite($ic-eye);
+}

@@ -20,3 +20,23 @@ i{
     outline: 0;
     outline-offset: 0;
 }
+.slick-prev{
+  @include sprite($ic-left-arrow);
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  cursor:pointer;
+  position: absolute;
+  left: 0px;
+  top: 38%;
+}
+.slick-next{
+  @include sprite($ic-right-arrow);
+  cursor: pointer;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 38%;
+}
