@@ -1,4 +1,46 @@
 .last-portfolio{
   background-image: url(#{$img}/porftolio-bg.jpg);
   min-height: 470px;
+  .last-portfolio-list{
+    @include container;
+    .item{
+      @include gallery(1 of 4 0.03);
+      .pic{
+        margin-bottom: 5px;
+      }
+      .name{
+        line-height: 1.2rem;
+        a{
+          text-decoration: none;
+          color: #000;
+          &:hover{
+            color: $link-hover-color;
+          }
+        }
+      }
+      .bottom-row{
+        margin-top: 8px;
+        @include clearfix;
+        .create-date{
+          margin-top: 10px;
+          float: left;
+          font-weight: 300;
+          font-size: 0.9rem;
+        }
+        .detail-link{
+          float: right;
+        }
+      }
+    }
+  }
+  .portfolio-link-row{
+    margin-top: 44px;
+    a{
+      font-weight: 300;
+      color: #426b8c;
+      &:hover{
+        color: $link-hover-color;
+      }
+    }
+  }
 }

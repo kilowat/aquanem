@@ -33,7 +33,7 @@ var libs = {
   breakpoint: libsPath.breakpoint,
  // bourbon: libsPath.bourbon,
  // bootstrap: libsPath.bootstrap,
-//  slick: libsPath.slick,
+  slick: libsPath.slick,
   //formValidator: libsPath.formValidator,
   //select:libsPath.select,
   fancybox:libsPath.fancybox,
