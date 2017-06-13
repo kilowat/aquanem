@@ -1,0 +1,47 @@
+.last-news{
+  padding-top: 38px;
+  padding-bottom: 38px;
+  .last-news-header{
+
+  }
+  .last-news-list{
+    @include container;
+    padding-bottom: 5px;
+    .last-news-item{
+      @include gallery(1 of 3 0.05);
+      .pic{
+        float: left;
+      }
+      .item-block{
+        float: right;
+        width: 54%;
+        .last-news-name{
+          margin-bottom: 5px;
+          a{
+            text-decoration: none;
+            line-height: 1.2rem;
+            font-weight: 300;
+            color: #000;
+            font-size: 1.1rem;
+            &:hover{
+              color: $link-hover-color;
+            }
+          }
+        }
+        .last-news-date{
+          font-size: 0.9rem;
+          font-weight: 300;
+          padding-bottom: 5px;
+          border-bottom: 1px dashed;
+          margin-bottom: 10px;
+          color: #7d7d7d;
+        }
+        .last-news-text{
+          font-size: 0.9rem;
+          font-weight: 300;
+          color: #7d7d7d;
+        }
+      }
+    }
+  }
+}

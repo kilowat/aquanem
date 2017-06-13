@@ -1,6 +1,9 @@
 .last-portfolio{
   padding-bottom: 40px;
   background-image: url(#{$img}/porftolio-bg.jpg);
+  .block-header{
+    padding-top: 35px;
+  }
   &.information{
       background-image: url('#{$img}/information-bg.jpg');
   }
@@ -37,7 +40,7 @@
     }
   }
   .portfolio-link-row{
-    margin-top: 44px;
+    margin-top: 40px;
     a{
       font-weight: 300;
       color: #426b8c;
