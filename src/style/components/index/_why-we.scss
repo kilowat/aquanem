@@ -1,16 +1,20 @@
 .why-we{
+  padding-bottom: 50px;
   .block-header{
     padding-top:47px;
   }
   .why-we-list{
     @include container;
+    padding-top: 10px;
     .item{
-      @include span(1 of 5 inside);
+      @include span(1 of 5 0 inside);
+      text-align: center;
       .pic{
 
       }
       .name{
-
+        margin-top: 20px;
+        font-weight: 300;
       }
     }
   }

@@ -1,0 +1,44 @@
+.top-reviews{
+  .reviews-list{
+    @include container;
+    min-height: 400px;
+    .item{
+      @include gallery(1 of 3 0.02);
+      .pic{
+        float: left;
+        margin-right: 10px;
+        img{
+          border: 1px solid #fff;
+          border-radius: 100%;
+        }
+      }
+      .content-item{
+        .name{
+          margin-bottom: 5px;
+          a{
+            text-decoration: none;
+            color: #000;
+            &:hover{
+              color: $link-hover-color;
+            }
+          }
+        }
+        .proffesion{
+          font-weight: 300;
+          color: #7d7d7d;
+          font-style: italic;
+          font-size: 0.95rem;
+          margin-bottom: 10px;
+        }
+        .text{
+          font-weight: 300;
+          color: #7d7d7d;
+          font-size: 0.95rem;
+        }
+        .date{
+
+        }
+      }
+    }
+  }
+}
