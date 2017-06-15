@@ -1,0 +1,81 @@
+footer{
+  background-color: #f2f8fa;
+  min-height: 310px;
+  .bottom-block{
+    padding-top: 25px;
+    @include container;
+    .menu-block{
+      float: left;
+      width: 45%;
+      ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        column-count: 3;
+        column-gap: 5px;
+        li{
+          margin-bottom: 10px;
+          margin-right: 20px;
+          a{
+            font-size: 0.95rem;
+            color: #6988a1;
+            font-weight: 400;
+            &:hover{
+              color: $link-hover-color;
+            }
+          }
+        }
+      }
+    }
+    .form-block{
+      float: left;
+      width: 30%;
+      .spam-block{
+        border: 2px solid;
+        padding: 20px;
+        .row{
+          margin-bottom: 10px;
+        }
+        .spam-block-header{
+          margin-bottom: 15px;
+          label{
+            color: #3888c7;
+            font-weight: 600;
+            font-size: 1.05rem;
+          }
+        }
+        #input-email{
+          box-sizing: border-box;
+          width: 100%;
+          height: 35px;
+          border-radius: 6px;
+          border: 1px solid #dce9f4;
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+        .buttons-row{
+          @include clearfix;
+          .spam-save-btn{
+            display: inline-block;
+            background-color: transparent;
+            float: left;
+            &:hover{
+              background-color: $link-hover-color;
+              border: 1px solid $link-hover-color;
+            }
+          }
+          .spam-cancel-btn{
+            float: right;
+            padding: 11px 16px;
+            border: none;
+            color: #c7d4de;
+            font-weight: 300;
+            &:hover{
+              color: $link-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

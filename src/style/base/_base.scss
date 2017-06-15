@@ -40,3 +40,17 @@ i{
   right: 0;
   top: 38%;
 }
+.soc-widget{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  >*{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .widget-words{
+    margin-right: 10px;
+    font-size: 0.9rem;
+    font-weight: 300px;
+  }
+}

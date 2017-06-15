@@ -1,9 +1,9 @@
 .top-reviews{
+  padding-bottom: 30px;
   .reviews-list{
     @include container;
-    min-height: 400px;
     .item{
-      @include gallery(1 of 3 0.02);
+      @include gallery(1 of 3 0.1);
       .pic{
         float: left;
         margin-right: 10px;
@@ -13,6 +13,8 @@
         }
       }
       .content-item{
+        width:58%;
+        float: right;
         .name{
           margin-bottom: 5px;
           a{
@@ -28,17 +30,39 @@
           color: #7d7d7d;
           font-style: italic;
           font-size: 0.95rem;
-          margin-bottom: 10px;
+          margin-bottom: 35px;
         }
         .text{
           font-weight: 300;
           color: #7d7d7d;
           font-size: 0.95rem;
+          position: relative;
+          &:before{
+            display: block;
+            content: "";
+             position: absolute;
+             width: 100%;
+             height: 1px;
+             border-bottom: 1px dashed;
+             top: -17px;
+          }
         }
         .date{
-
+          font-size: 0.9rem;
+          font-weight: 300;
+          color: #7d7d7d;
+          margin-top: 10px;
+          margin-bottom: 10px;
         }
       }
+    }
+  }
+  .reviews-detail-link{
+    display: inline-block;
+    color: #426b8c;
+    margin-top: 25px;
+    &:hover{
+      color: $link-hover-color;
     }
   }
 }
