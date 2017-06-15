@@ -1,0 +1,17 @@
+.why-we{
+  .block-header{
+    padding-top:47px;
+  }
+  .why-we-list{
+    @include container;
+    .item{
+      @include span(1 of 5 inside);
+      .pic{
+
+      }
+      .name{
+
+      }
+    }
+  }
+}

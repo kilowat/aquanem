@@ -1,11 +1,13 @@
 .last-portfolio{
-  padding-bottom: 40px;
   background-image: url(#{$img}/porftolio-bg.jpg);
   .block-header{
     padding-top: 35px;
   }
   &.information{
       background-image: url('#{$img}/information-bg.jpg');
+  }
+  &.objects{
+    padding-bottom: 43px;
   }
   .last-portfolio-list{
     @include container;

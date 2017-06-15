@@ -1,8 +1,8 @@
 .last-news{
-  padding-top: 38px;
+  padding-top: 30px;
   padding-bottom: 38px;
   .last-news-header{
-
+    padding-top: 48px;
   }
   .last-news-list{
     @include container;
@@ -43,5 +43,8 @@
         }
       }
     }
+  }
+  .portfolio-link-row.news-link-row {
+      margin-top: 25px;
   }
 }
