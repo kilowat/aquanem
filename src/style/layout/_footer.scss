@@ -1,6 +1,5 @@
 footer{
   background-color: #f2f8fa;
-  min-height: 310px;
   .bottom-block{
     padding-top: 25px;
     @include container;
@@ -26,13 +25,33 @@ footer{
           }
         }
       }
+      .price-link{
+        margin-top: 70px;
+        i{
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+        a{
+          vertical-align: middle;
+          display: inline-block;
+          color: #0b4e78;
+          font-size: 0.9rem;
+          &:hover{
+            color: $link-hover-color;
+            i{
+              @include sprite($ic-download-hover);
+            }
+          }
+        }
+      }
     }
     .form-block{
       float: left;
       width: 30%;
       .spam-block{
-        border: 2px solid;
+        border-style: solid; border-width: 5px; -moz-border-image: url(#{$img}/border.png) 4 round; -webkit-border-image: url(#{$img}/border.png) 4 round; -o-border-image: url(#{$img}/border.png) 4 round; border-image: url(#{$img}/border.png) 4 fill round;
         padding: 20px;
+        position: relative;
         .row{
           margin-bottom: 10px;
         }
@@ -74,6 +93,72 @@ footer{
               color: $link-hover-color;
             }
           }
+        }
+      }
+    }
+    .contact-block{
+      float: right;
+      width: 22%;
+      .contact-row{
+        margin-bottom: 10px;
+        a{
+          color: #0b4e78;
+          &:hover{
+            color: $link-hover-color;
+          }
+        }
+        .ic-cell{
+          width: 20px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .text-cell{
+          display: inline-block;
+          vertical-align: middle;
+          &.address-text{
+            font-weight: 300;
+            font-size: 0.9rem;
+          }
+          div{
+            margin-bottom: 7px;
+          }
+        }
+      }
+      .social-icons{
+        margin-top: 5px;
+        ul{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li{
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .bottom-line{
+    margin-top: 25px;
+    padding-top:25px;
+    padding-bottom: 25px;
+    border-top: 2px dotted #a6b9ca;
+    @include clearfix;
+    .coop{
+      float: left;
+      font-size: 0.9rem;
+      color: #a6b9ca;
+    }
+    .developer{
+      float: right;
+      span{
+        font-size: 0.9rem;
+        color: #a6b9ca;
+      }
+      a{
+        font-size: 0.9rem;
+        color: #a6b9ca;
+        &:hover{
+          color: $link-hover-color;
         }
       }
     }

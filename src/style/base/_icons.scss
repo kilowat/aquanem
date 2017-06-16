@@ -10,3 +10,39 @@
 .ic-view-count{
   @include sprite($ic-eye);
 }
+.ic-phone{
+  @include sprite($ic-phone);
+}
+.ic-email{
+  @include sprite($ic-email);
+}
+.ic-vk{
+  @include sprite($ic-vk);
+  &:hover{
+    @include sprite($ic-vk-hover);
+  }
+}
+.ic-fb{
+  @include sprite($ic-fb);
+  &:hover{
+    @include sprite($ic-fb-hover);
+  }
+}
+.ic-inst{
+  @include sprite($ic-inst);
+  &:hover{
+    @include sprite($ic-inst-hover);
+  }
+}
+.ic-you-tube{
+  @include sprite($ic-you-tube);
+  &:hover{
+    @include sprite($ic-you-tube-hover);
+  }
+}
+.ic-download{
+  @include sprite($ic-download);
+  &:hover{
+    @include sprite($ic-download-hover);
+  }
+}
