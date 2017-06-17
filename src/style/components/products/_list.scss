@@ -1,0 +1,56 @@
+.catalog{
+  float: right;
+  width: 75%;
+  @include breakpoint(max-width $desktop-width){
+    float: right;
+    width: 100%;
+  }
+  .catalog-list{
+    @include container;
+    .item{
+      margin-bottom: 20px;
+      @include gallery(1 of 3 0.03);
+      @include breakpoint(max-width 800px){
+        @include gallery(1 of 2 0.03);
+      }
+      .pic{
+        margin-bottom: 5px;
+        img{
+          width: 100%;
+        }
+      }
+      .name{
+        line-height: 1.2rem;
+        a{
+          text-decoration: none;
+          color: #000;
+          &:hover{
+            color: $link-hover-color;
+          }
+        }
+      }
+      .bottom-row{
+        margin-top: 8px;
+        @include clearfix;
+        .price{
+          margin-top: 10px;
+          float: left;
+          font-weight: 300;
+          @include breakpoint(max-width 530px){
+            float: none;
+            width: 100%;
+          }
+        }
+        .detail-link{
+          float: right;
+          padding-left: 25px;
+          padding-right: 25px;
+          @include breakpoint(max-width 530px){
+            float: none;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
