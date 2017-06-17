@@ -1,6 +1,9 @@
 .top-menu-block{
-  margin-top:35px;
-  margin-bottom: 34px;
+  padding-top:35px;
+  padding-bottom: 35px;
+  @include breakpoint(max-width $desktop-width){
+    display: none;
+  }
   >ul{
     height: 37px;
     margin: 0;
@@ -25,14 +28,14 @@
         padding-right: 20px;
         padding-top: 5px;
         padding-bottom: 5px;
+        border: 1px solid transparent;
+        @include breakpoint(max-width $desktop-width){
+          padding: 4px;
+        }
         &:hover, &.selected{
           color: #4c91cb;
           border: 1px solid #3888c7;
           border-radius: 15px;
-          padding-left: 19px;
-          padding-right: 19px;
-          padding-top: 4px;
-          padding-bottom: 4px;
         }
       }
       ul{

@@ -9,6 +9,15 @@
     .item{
       @include span(1 of 5 0 inside);
       text-align: center;
+      @include breakpoint(max-width 770px){
+        @include span(1 of 3 0 inside);
+        margin-top: 20px;
+        text-align: center;
+      }
+      @include breakpoint(max-width 520px){
+        @include span(1 of 1 0 inside);
+        margin-bottom: 20px;
+      }
       .pic{
 
       }

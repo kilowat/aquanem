@@ -1,5 +1,6 @@
 @import 'search';
 @import 'simpleDrawer';
+@import "breadcrumbs";
 @import "top-menu";
 @import "index/main-slider";
 @import "index/work-company";
@@ -8,3 +9,5 @@
 @import "index/last-news";
 @import "index/why-we";
 @import "index/reviews";
+@import "portfolio/list";
+@import "portfolio/detail";

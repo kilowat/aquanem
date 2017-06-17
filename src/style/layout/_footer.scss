@@ -2,10 +2,17 @@ footer{
   background-color: #f2f8fa;
   .bottom-block{
     padding-top: 25px;
+    position: relative;
     @include container;
     .menu-block{
       float: left;
       width: 45%;
+      @include breakpoint(max-width $desktop-width){
+        float: none;
+        ul{
+          display: none;
+        }
+      }
       ul{
         margin: 0;
         padding: 0;
@@ -27,6 +34,15 @@ footer{
       }
       .price-link{
         margin-top: 70px;
+        @include breakpoint(max-width $desktop-width){
+          margin: 0;
+          position: absolute;
+          bottom: 1px;
+        }
+        @include breakpoint(max-width 570px){
+          text-align: center;
+          width: 100%;
+        }
         i{
           vertical-align: middle;
           margin-right: 5px;
@@ -48,6 +64,14 @@ footer{
     .form-block{
       float: left;
       width: 30%;
+      @include breakpoint(max-width $desktop-width){
+        margin-bottom: 30px;
+        width: 300px;
+      }
+      @include breakpoint(max-width 570px){
+        float: none;
+        width: 100%;
+      }
       .spam-block{
         border-style: solid; border-width: 5px; -moz-border-image: url(#{$img}/border.png) 4 round; -webkit-border-image: url(#{$img}/border.png) 4 round; -o-border-image: url(#{$img}/border.png) 4 round; border-image: url(#{$img}/border.png) 4 fill round;
         padding: 20px;
@@ -99,6 +123,24 @@ footer{
     .contact-block{
       float: right;
       width: 22%;
+      text-align: right;
+      @include breakpoint(max-width $desktop-width){
+        width: 220px;
+        text-align: center;
+
+      }
+      @include breakpoint(max-width 570px){
+        float: none;
+        width: 100%;
+        padding-bottom: 30px;
+        .social-icons{
+          text-align: center;
+        }
+      }
+      .contact-block-wrapper {
+        display: inline-block;
+        text-align: left;
+      }
       .contact-row{
         margin-bottom: 10px;
         a{
@@ -147,9 +189,19 @@ footer{
       float: left;
       font-size: 0.9rem;
       color: #a6b9ca;
+      @include breakpoint(max-width 570px){
+        text-align: center;
+        width: 100%;
+        float: none;
+      }
     }
     .developer{
       float: right;
+      @include breakpoint(max-width 570px){
+        text-align: center;
+        width: 100%;
+        float: none;
+      }
       span{
         font-size: 0.9rem;
         color: #a6b9ca;

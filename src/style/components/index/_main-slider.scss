@@ -1,7 +1,13 @@
 .slider-block{
   display:flex;
+  @include breakpoint(max-width 800px){
+    display: block;
+  }
   .bx-slider-container{
     width: 70%;
+    @include breakpoint(max-width 800px){
+    width: 100%;
+    }
     .slide{
       height: 360px;
       background-size: cover;
@@ -14,6 +20,11 @@
         font-size: 1.2rem;
         color: #0b4e78;
         font-weight: 300;
+        @include breakpoint(max-width 800px){
+          width: 100%;
+          text-align: center;
+          padding-left: 0;
+        }
         b{
           font-weight: 600;
         }
@@ -33,13 +44,21 @@
     background-image: url(#{$img}/form-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+    @include breakpoint(max-width 800px){
+      width: 100%;
+      float: none;
+      padding-left: 0px;
+      padding-right: 0px;
+      .main-form-wrapper{
+        padding: 10px;
+      }
+    }
     .slider-form-title{
       text-align: center;
       color: #fff;
       font-weight: 600;
       margin-top:3px;
       line-height: 1.2rem;
-      margin-bottom: 20px;
       position: relative;
       font-size: 0.90rem;
       &:after{
@@ -48,9 +67,8 @@
         height: 1px;
         border-top: 1px dashed #fff;
         content: "";
-        left: 88px;
-        position: absolute;
-        bottom: -10px;
+        margin: 10px auto auto;
+        margin-bottom: 10px;
       }
     }
     .row{
@@ -62,7 +80,7 @@
         width: 100%;
         border-radius: 5px;
         background-color: transparent;
-        padding-left: 5%;
+        padding-left: 10px;
         font-size: 0.9rem;
         &:focus{
           border: 1px solid #95cbac;

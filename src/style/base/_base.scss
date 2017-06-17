@@ -6,6 +6,29 @@ html{
 body{
   margin: 0;
 }
+html,
+body {
+  height: 100%;
+}
+
+main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -305px;
+  @include breakpoint(max-width $desktop-width){
+  margin: 0 auto 0px;
+  }
+}
+
+footer,
+.push {
+  height: 305px;
+  @include breakpoint(max-width $desktop-width){
+    height: auto;
+  }
+}
+
 .wrapper{
   margin: auto;
   padding-left: $margin-wrapper;

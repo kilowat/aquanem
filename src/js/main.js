@@ -3,6 +3,12 @@ $(document).ready(function(){
 
   $('.slider-main').bxSlider();
 
+  $('.portfolio-slider .bxslider').bxSlider({
+    pagerCustom: '.portfolio-slider .bx-pager',
+    captions: true,
+    slideWidth: 737
+  });
+
   $('.pather .pather-list').slick({
     dots: false,
      infinite: false,

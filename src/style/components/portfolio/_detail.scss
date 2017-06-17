@@ -1,0 +1,224 @@
+.portfolio-detail{
+  .portfolio-pic{
+    .portfolio-slider{
+      max-width: 737px;
+      margin: auto;
+      .bx-pager{
+        margin-top: 5px;
+        @include breakpoint(max-width 755px){
+          text-align: center;
+        }
+        a{
+          img{
+            margin-bottom: 4px;
+            border: 1px solid transparent;
+          }
+        }
+        .active{
+          img{
+            border: 1px solid #3888c7;
+          }
+        }
+      }
+      .bx-wrapper .bx-caption{
+        background: rgba(144, 176, 196, 0.8);
+        span{
+          font-family: $font-opensans;
+          padding: 15px;
+          line-height: 1.3rem;
+        }
+      }
+    }
+  }
+  .content-block{
+    margin-top: 40px;
+    @include clearfix;
+    .block-name{
+      font-weight: 300;
+      text-align: center;
+    }
+    .props-block{
+      float: left;
+      width: 50%;
+      @include breakpoint(max-width $middle-width){
+        float: none;
+        width: 100%;
+      }
+      ul.prop-list{
+        list-style: none;
+        margin: 0;
+        li{
+          border-bottom: 2px dotted #9c9c9c;
+          position: relative;
+          padding: 0;
+          margin-bottom: 5px;
+          line-height: 1.3em;
+          @include breakpoint(max-width 480px){
+            border-bottom:none;
+          }
+          .text{
+            bottom: -5px;
+            position: relative;
+            background-color: #fff;
+            font-weight: 300;
+            font-size: 0.97rem;
+            @include breakpoint(max-width 480px){
+              bottom: 0;
+            }
+          }
+          .value{
+            color: #666;
+            position: absolute;
+            right: 0;
+            padding-left: 2px;
+            bottom: -5px;
+            background-color: #fff;
+            @include breakpoint(max-width 480px){
+              position: unset;
+              display: block;
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .detail-text{
+      font-weight: 300;
+      color: #7d7d7d;
+      line-height: 1.3rem;
+      .block-name{
+        display: none;
+      }
+      &.with-props{
+        width: 48%;
+        margin-left: 2%;
+        float: left;
+        @include breakpoint(max-width $middle-width){
+          float: none;
+          width: 100%;
+        }
+        .block-name{
+          display: block;
+        }
+      }
+      p{
+        line-height: 1.3rem;
+      }
+    }
+  }
+}
+.equipment{
+  .equipment-list{
+    @include container;
+    .item{
+      @include gallery(1 of 4 0.03);
+      @include breakpoint(max-width $desktop-width){
+        @include gallery(1 of 3 0.03);
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      @include breakpoint(max-width 800px){
+        @include gallery(1 of 2 0.03);
+      }
+      .pic{
+        margin-bottom: 5px;
+        img{
+          width: 100%;
+        }
+      }
+      .name{
+        line-height: 1.2rem;
+        a{
+          text-decoration: none;
+          color: #000;
+          &:hover{
+            color: $link-hover-color;
+          }
+        }
+      }
+      .bottom-row{
+        margin-top: 8px;
+        @include clearfix;
+        .price{
+          margin-top: 10px;
+          float: left;
+          font-weight: 300;
+          @include breakpoint(max-width 530px){
+            float: none;
+            width: 100%;
+          }
+        }
+        .detail-link{
+          float: right;
+          padding-left: 25px;
+          padding-right: 25px;
+          @include breakpoint(max-width 530px){
+            float: none;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .portfolio-link-row{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    a{
+      font-weight: 300;
+      color: #426b8c;
+      &:hover{
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+.client-reviews{
+  margin-bottom: 40px;
+  .block-reviews{
+    @include clearfix;
+    .pic{
+      float: left;
+      width: 230px;
+      @include breakpoint(max-width 840px){
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .reviews-content{
+      float: left;
+      width: 70%;
+      @include breakpoint(max-width 840px){
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+      .name{
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+      .date{
+        font-weight: 300;
+        color: #7d7d7d;
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+      }
+      .post-work{
+        color:#7d7d7d;
+        padding-bottom: 20px;
+        font-size: 0.9rem;
+        font-style: italic;
+        border-bottom: 1px dashed;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      .reviews-text{
+        color:#7d7d7d;
+        font-size: 0.9rem;
+        .row{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

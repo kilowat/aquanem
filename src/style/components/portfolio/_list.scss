@@ -1,25 +1,11 @@
-.last-portfolio{
-  background-image: url(#{$img}/porftolio-bg.jpg);
-  .block-header{
-    padding-top: 35px;
-  }
-  &.information{
-      background-image: url('#{$img}/information-bg.jpg');
-  }
-  &.objects{
-    padding-bottom: 43px;
-    padding-top: 10px;
-  }
-  .last-portfolio-list{
+.portfolio-page{
+  .portfolio-list{
     @include container;
     .item{
       @include gallery(1 of 4 0.03);
+      margin-bottom: 20px;
       @include breakpoint(max-width $desktop-width){
         @include gallery(1 of 3 0.03);
-        margin-bottom: 15px;
-        img{
-          width: 100%;
-        }
         text-align: center;
       }
       @include breakpoint(max-width 800px){
@@ -27,6 +13,9 @@
       }
       .pic{
         margin-bottom: 5px;
+        img{
+          width: 100%;
+        }
       }
       .name{
         line-height: 1.2rem;
@@ -60,22 +49,5 @@
         }
       }
     }
-  }
-  .portfolio-link-row{
-    margin-top: 40px;
-    a{
-      font-weight: 300;
-      color: #426b8c;
-      &:hover{
-        color: $link-hover-color;
-      }
-    }
-  }
-  .view-count{
-    float: left;
-    margin-left: 30px;
-    font-weight: 300;
-    font-size: 0.9rem;
-    margin-top: 10px;
   }
 }

@@ -9,12 +9,28 @@
     padding-bottom: 5px;
     .last-news-item{
       @include gallery(1 of 3 0.05);
+      @include breakpoint(max-width $desktop-width){
+        text-align: center;
+      }
+      @include breakpoint(max-width $small-width){
+        float: none!important;
+        width: 100%;
+        margin-left: 0!important;
+        margin-bottom: 20px;
+      }
       .pic{
         float: left;
+        @include breakpoint(max-width $desktop-width){
+          float: none;
+        }
       }
       .item-block{
         float: right;
         width: 54%;
+        @include breakpoint(max-width $desktop-width){
+          float: none;
+          width: 100%;
+        }
         .last-news-name{
           margin-bottom: 5px;
           a{

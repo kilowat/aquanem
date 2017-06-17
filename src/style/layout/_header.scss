@@ -1,9 +1,17 @@
 header{
   background: url(#{$img}/header-bg-2.jpg) top right no-repeat, url(#{$img}/header-bg.png);
+  @include breakpoint(max-width $desktop-width){
+    background-image: none;
+    background-color: #f2f8fa;
+  }
   .wrapper{
     .top-block{
       @include container;
       padding-top: 27px;
+      @include breakpoint(max-width $desktop-width){
+        padding-bottom: 90px;
+        position: relative;
+      }
       .search-block{
         float: left;
         width: 41%;
@@ -11,6 +19,11 @@ header{
         .address-line{
           font-weight: 300;
           font-size: 0.8rem;
+          @include breakpoint(max-width $desktop-width){
+            position: absolute;
+            bottom: 80px;
+            left: 88px;
+          }
           i{
             margin-right: 5px;
           }
@@ -18,35 +31,68 @@ header{
       }
       .logo-block{
         float: left;
-        width: 18%;
+        width: 180px;
         text-align: center;
         padding-top: 21px;
+        @include breakpoint(max-width $desktop-width){
+          float: none;
+          margin: auto;
+          padding-top: 0px;
+        }
+        @include breakpoint(max-width 500px){
+          margin: unset;
+          padding-left: 30px;
+          padding-bottom: 20px;
+          img{
+            width: 60%;
+          }
+        }
         .logo-text{
           font-size: 0.9rem;
           margin-top: 3px;
           font-weight: 300;
           color: #3888c7;
+          @include breakpoint(max-width $desktop-width){
+            display: none;
+          }
         }
       }
       .phone-block{
         float: right;
-        width: 41%;
+        width: 37%;
         text-align: right;
         .work-time-wrapper{
+          @include breakpoint(max-width $desktop-width){
+            @include breakpoint(max-width $desktop-width){
+              position: absolute;
+              bottom: 75px;
+              left: 0;
+            }
+          }
           .work-time{
+            background-color: #ccc;
             height: 28px;
             width: 75px;
             display: inline-block;
+
           }
         }
         .phone-wrapper{
           @include clearfix;
           margin-top: 10px;
-          width: 78%;
+          width: 100%;
           float: right;
+          @include breakpoint(max-width $desktop-width){
+            margin-top: 25px;
+          }
           .phone-number{
             float: left;
-            width: 44%;
+            width: 55%;
+            @include breakpoint(max-width $desktop-width){
+              position: absolute;
+              top: 25px;
+              right: 0px;
+            }
             .phone-item{
               span{
                 font-weight: 300;
@@ -58,9 +104,15 @@ header{
           }
           .callback-block{
             float: right;
-            width: 50%;
+            width: 39%;
+            @include breakpoint(max-width $desktop-width){
+              position: absolute;
+              float: none;
+              right: 0px;
+              bottom: 25px;
+            }
             .callback-btn{
-              width: 160px;
+              width: 100%;
               box-sizing: border-box;
               height: 38px;
               border: 1px solid #3888c7;
@@ -70,6 +122,12 @@ header{
               font-size: 0.9rem;
               font-weight: 300;
               cursor: pointer;
+              @include breakpoint(max-width $desktop-width){
+                width: 200px;
+              }
+              @include breakpoint(max-width 540px){
+                width: 100%;
+              }
               &:hover{
                 background-color: #e94d24;
                 border: 1px solid #e94d24;

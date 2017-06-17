@@ -8,14 +8,29 @@
       &:nth-child(even){
         @include last;
       }
+      @include breakpoint(max-width $middle-width){
+        @include span(1 of 1);
+        float: none;
+        text-align: center;
+      }
       .pic{
         float: left;
         width: 16%;
         padding-left: 5%;
+        @include breakpoint(max-width $middle-width){
+          width: 100%;
+          float: none;
+          padding: 0;
+        }
       }
       .item-content{
         float: right;
         width: 77%;
+        @include breakpoint(max-width $middle-width){
+          width: 100%;
+          float: none;
+          padding: 0;
+        }
         .name{
           margin-bottom: 7px;
           line-height: 1.1;

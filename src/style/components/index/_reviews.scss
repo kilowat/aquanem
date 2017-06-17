@@ -4,9 +4,19 @@
     @include container;
     .item{
       @include gallery(1 of 3 0.1);
+      @include breakpoint(max-width 520px){
+        float: none!important;
+        width: 100%;
+        margin-left: 0!important;
+        margin-bottom: 20px;
+      }
       .pic{
         float: left;
         margin-right: 10px;
+        @include breakpoint(max-width $desktop-width){
+          text-align: center;
+          float: none;
+        }
         img{
           border: 1px solid #fff;
           border-radius: 100%;
@@ -15,6 +25,11 @@
       .content-item{
         width:58%;
         float: right;
+        @include breakpoint(max-width $desktop-width){
+          text-align: center;
+          float: none;
+          width: 100%;
+        }
         .name{
           margin-bottom: 5px;
           a{
