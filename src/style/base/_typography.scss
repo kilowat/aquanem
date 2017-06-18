@@ -33,3 +33,14 @@ p{
   padding-top: 40px;
   margin: 0;
 }
+.section-text{
+  font-weight: 300;
+  line-height: 1.3rem;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+  @include breakpoint(max-width $middle-width){
+    width: 100%;
+  }
+}

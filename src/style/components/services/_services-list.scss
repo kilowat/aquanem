@@ -1,0 +1,86 @@
+.services{
+  .services-list{
+    display: flex;
+    flex-wrap:wrap;
+    .item{
+      border: 1px dashed #4590cb;
+      width: 32%;
+      margin-right: 1%;
+      margin-bottom: 10px;
+      height: 360px;
+      position: relative;
+      @include breakpoint(max-width $desktop-width){
+        height: auto;
+      }
+      @include breakpoint(max-width 700px){
+        width: 48%;
+      }
+      @include breakpoint(max-width $small-width){
+        width: 100%;
+        margin-right: 0;
+      }
+
+      &:hover{
+        background-color: #f2f8fa;
+      }
+      .item-wrapper{
+
+        padding-bottom: 20px;
+        padding-top: 40px;
+        padding-left: 25px;
+        padding-right: 26px;
+        @include breakpoint(max-width $desktop-width){
+          padding: 15px;
+          text-align: center;
+        }
+        @include clearfix;
+        .pic{
+          float: left;
+          width: 18%;
+          @include breakpoint(max-width $desktop-width){
+            float: none;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+        }
+        .item-content{
+          float: right;
+          width: 80%;
+          @include breakpoint(max-width $desktop-width){
+            float: none;
+            width: 100%;
+          }
+          .name{
+            a{
+              color: #000;
+              text-decoration: none;
+              font-weight: 600;
+              &:hover{
+                color: $link-hover-color;
+              }
+            }
+            margin-bottom: 10px;
+          }
+          .text{
+            font-size: 0.9rem;
+            color: #7d7d7d;
+            line-height: 1.4rem;
+            @include breakpoint(max-width $desktop-width){
+              margin-bottom: 50px;
+            }
+          }
+          .detail-btn-row{
+            position: absolute;
+            bottom: 20px;
+            @include breakpoint(max-width $desktop-width){
+              text-align: center;
+              width: 100%;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

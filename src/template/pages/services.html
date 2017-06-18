@@ -1,0 +1,44 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+{% include './../components/breadcrumbs.html'%}
+
+<h1 class="section-header">Услуги</h1>
+
+<div class="section-text">
+  Компания «Акванем» оказывает комплексные услуги по анализу воды, монтажу
+и вводу в эксплуатацию различных систем очистки воды от домашних до
+промышленных. Также мы проводим полный аудит и экспертизу уже
+существующих систем водоподготовки.
+</div>
+<!--start component services list-->
+<div class="services">
+  <div class="wrapper">
+    <div class="services-list">
+      <!--foreach $arResult-->
+      {% for item in servicesList%}
+      <div class="item">
+        <div class="item-wrapper">
+          <div class="pic">
+            <a href="#" title=""><img src="{{item.img}}" alt=""></a>
+          </div>
+          <div class="item-content">
+            <div class="name">
+              <a href="#" title="{{item.name}}">{{item.name}}</a>
+            </div>
+            <div class="text">
+              {{item.text}}
+            </div>
+            <div class="row detail-btn-row">
+              <a href="#" title="" class="detail-link detail-btn-red">Подробнее <i class="ic-arrow"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {%endfor%}
+      <!--end foreach-->
+    </div>
+  </div>
+</div>
+<!--end component services list-->
+{% endblock %}

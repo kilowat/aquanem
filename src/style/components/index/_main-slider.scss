@@ -98,22 +98,6 @@
     .button-row{
       margin-top:10px;
       text-align: center;
-      .make-order-btn{
-        box-sizing: border-box;
-        background-color: transparent;
-        border: 1px solid #fff;
-        padding: 10px;
-        font-size: 0.95rem;
-        color: #fff;
-        border-radius: 15px;
-        padding-left: 40px;
-        padding-right: 40px;
-        cursor: pointer;
-        &:hover{
-          background-color: #e94d24;
-          border: 1px solid #a62300;
-        }
-      }
     }
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: #fff;
