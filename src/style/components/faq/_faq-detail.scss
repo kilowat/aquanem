@@ -1,0 +1,99 @@
+.faq-detail{
+  .faq-content{
+    margin-bottom: 50px;
+    .faq-text{
+      margin-bottom: 40px;
+      .row{
+        >*{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        i{
+          margin-right: 10px;
+        }
+        margin-bottom: 20px;
+      }
+      &.faq-question{
+        .text{
+          font-size: 1.1rem;
+          color: #788b9c;
+          font-weight: 300;
+        }
+      }
+      &.faq-answer{
+        .text{
+          font-size: 0.95rem;
+          color: #7d7d7d;
+        }
+      }
+      .title-row{
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .nav-row{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    @include clearfix;
+
+    .nav-block{
+      padding: 20px;
+      position: relative;
+      border: 1px dashed #7d7d7d;
+      .row:first-child{
+        margin-bottom: 20px;
+      }
+      span{
+        font-weight: 300;
+        font-size: 1.05rem;
+      }
+      a{
+        font-size: 1.05rem;
+        color: #0b4e78;
+        font-weight: 300;
+        &:hover{
+          color: $link-hover-color;
+        }
+      }
+    }
+    .left-block{
+      width: 49%;
+      margin-right: 1%;
+      box-sizing: border-box;
+      padding-left: 50px;
+      @include breakpoint(max-width $phone-width){
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 5px;
+      }
+      .ic-arrow{
+        transform: rotate(180deg);
+        position: absolute;
+        left: 20px;
+        margin-top: 3px;
+      }
+    }
+    .right-block{
+      text-align: right;
+      width: 49%;
+      box-sizing: border-box;
+      padding-right: 50px;
+      @include breakpoint(max-width $phone-width){
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .ic-arrow{
+        position: absolute;
+        right: 20px;
+        margin-top: 3px;
+      }
+    }
+  }
+}

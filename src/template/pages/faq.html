@@ -1,0 +1,77 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+{% include './../components/breadcrumbs.html'%}
+
+<h1 class="section-header">Вопрос ответ</h1>
+
+<!--start compnent faq list-->
+<div class="faq">
+  <div class="wrapper">
+    <div class="row add-reviews-row">
+      <button type="button" class="detail-btn-red" name="button"><i class="ic-add-reviews"></i>Оставить свой вопрос</button>
+    </div>
+    <div class="faq-list">
+      <!--foreach $arResult-->
+      {% for item in faqList %}
+      <div class="item">
+        <div class="item-wrapper">
+          <div class="name-wrapper">
+            <div class="pic">
+              <img src="./images/faq.png" alt="">
+            </div>
+            <div class="name">
+              <a href="./faq-detail.html" title="">{{item.name}}</a>
+            </div>
+          </div>
+          <div class="text">
+            {{item.text}}
+          </div>
+          <div class="row detail-btn-row">
+            <a href="./faq-detail.html" title="" class="detail-link detail-btn-red">Подробнее <i class="ic-arrow"></i></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!--endforeach-->
+    </div>
+  </div>
+</div>
+<!--end component faq list-->
+
+<!--start form add reveiws-->
+<div class="add-reviews-form">
+  <div class="wrapper">
+    <h2 class="section-header">ОСТАВИТЬ СВОЙ ВОПРОС</h2>
+    <div class="form-text">
+      Вы можете задать свой вопрос. Если ваш вопрос окажется интересным или войдет<br>
+      в список популярных вопросов, то ответ на него будет опубликован.<br>
+      Обязательно оставьте правильный адрес электронной почты<br>
+      для получения персонального ответа.
+    </div>
+    <div class="form-wrapper">
+      <form class="" action="index.html" method="post">
+        <div class="row">
+          <input type="text" name="NAME" placeholder="Как вас зовут?" value="">
+        </div>
+        <div class="row two-cell-row">
+          <div class="input-cell">
+            <input type="text" name="PHONE" placeholder="Номер телефона" value="">
+          </div>
+          <div class="input-cell">
+            <input type="text" placeholder="E-mail" name="EMAIL" value="">
+          </div>
+        </div>
+        <div class="row">
+          <textarea name="TEXT" placeholder="Ваш вопрос?"></textarea>
+        </div>
+        <div class="row button-row">
+          <button type="button"  class="detail-btn-red" name="button">Отправить</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+<!--end form add reveiws-->
+{% endblock %}

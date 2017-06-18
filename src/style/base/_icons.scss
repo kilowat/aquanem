@@ -56,3 +56,12 @@
     display: block;
   }
 }
+.ic-add-reviews{
+  @include sprite($ic-add-reviews);
+}
+.ic-answer{
+  @include sprite($ic-answer);
+}
+.ic-question{
+  @include sprite($ic-question);
+}

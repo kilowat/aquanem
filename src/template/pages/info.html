@@ -1,0 +1,35 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+{% include './../components/breadcrumbs.html'%}
+
+<h1 class="section-header">Информация</h1>
+
+<!--start component articles list-->
+<div class="info">
+  <div class="wrapper">
+    <div class="info-list">
+      <!--foreach $arResult-->
+      {% for item in infoList%}
+      <div class="item">
+        <div class="pic">
+          <a href="./info-detail.html" title="">
+            <img src="./images/last-portfolio.jpg" alt="">
+          </a>
+        </div>
+        <div class="name">
+          <a href="./info-detail.html" title="">Длинное название объекта в две строки</a>
+        </div>
+        <div class="bottom-row">
+          <span class="create-date">сентябрь 2017г</span>
+          <span class="view-count">54 <i class="ic-view-count"></i></span>
+        </div>
+      </div>
+      {% endfor %}
+      <!--end foreach-->
+    </div>
+  </div>
+</div>
+<!--end component articles list-->
+
+{% endblock %}

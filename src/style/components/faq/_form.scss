@@ -1,0 +1,54 @@
+.add-reviews-form{
+  .form-text{
+    text-align: center;
+    line-height: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #7d7d7d;
+  }
+  .form-wrapper{
+    margin: auto;
+    width: 440px;
+    margin-bottom: 30px;
+    @include breakpoint(max-width 440px){
+      width: 100%;
+    }
+    .row{
+      margin-bottom: 5px;
+      input, textarea{
+        padding-left: 10px;
+        font-size: 1rem;
+        font-family: $font-opensans;
+        font-weight: 300;
+        width: 100%;
+        box-sizing: border-box;
+        height: 39px;
+        border-radius: 5px;
+        border: 1px solid #a6b9ca;
+        &:focus {
+          border: 1px solid #95cbac;
+          box-shadow: 0 0 2px 0 #95cbac;
+        }
+      }
+      textarea{
+        padding-top: 10px;
+        height: 90px;
+        resize: none;
+      }
+    }
+    .two-cell-row{
+      @include clearfix;
+      .input-cell{
+        width: 49%;
+        float: left;
+        &:first-child{
+          margin-right: 2%;
+        }
+      }
+    }
+    .button-row{
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}
