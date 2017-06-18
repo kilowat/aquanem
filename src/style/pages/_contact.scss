@@ -1,0 +1,40 @@
+.contact{
+  .block-h{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .left-block{
+    float: left;
+    width: 49%;
+    text-align: right;
+    .block-wrapper{
+      display: inline-block;
+      text-align: left;
+    }
+    .table{
+      .table-row{
+        .table-cell{
+          padding-right: 10px;
+          padding-bottom: 10px;
+          vertical-align: middle;
+          line-height: 1.5rem;
+          font-weight: 300;
+          b{
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .right-block{
+    float: right;
+    width: 49%;
+  }
+  .ya-map{
+    height: 380px;
+    background-color: #ccc;
+    width: 100%;
+  }
+}

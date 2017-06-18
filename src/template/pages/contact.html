@@ -1,0 +1,91 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+{% include './../components/breadcrumbs.html'%}
+
+<h1 class="section-header">Контакты</h1>
+<div class="section-text">
+  Вы можете обратиться к нам напрямую или оставить свою заявку<br>
+или вопрос через форму обратной связи
+</div>
+<div class="contact">
+  <div class="wrapper">
+    <div class="left-block">
+      <div class="block-wrapper">
+        <h2 class="block-h">Контактные данные</h2>
+        <div class="table">
+          <div class="table-row">
+            <div class="table-cell">
+              <i class="ic-phone"></i>
+            </div>
+            <div class="table-cell">
+              <span>Номера телефонов</span>
+            </div>
+            <div class="table-cell">
+              <span>+7 (961) <b>526-26-09</b></span><br>
+              <span>+7 (918) <b>027-30-30</b></span>
+            </div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">
+              <i class="ic-email"></i>
+            </div>
+            <div class="table-cell">
+              <span>Основной e-mail:</span>
+            </div>
+            <div class="table-cell">
+              <a href="emailto:info@aquanem.ru" title="info@aquanem.ru">info@aquanem.ru</a>
+            </div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">
+              <i class="ic-point"></i>
+            </div>
+            <div class="table-cell">
+              <span>Адрес:</span>
+            </div>
+            <div class="table-cell">
+              <span>г. Краснодар, ул. 1-я линия<br>
+              Поймы реки Кубань, д. 204</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-block">
+      <!--start form add reveiws-->
+      <div class="add-reviews-form">
+        <div class="wrapper">
+          <h2 class="block-h">Форма обратной связи</h2>
+          <div class="form-wrapper">
+            <form class="" action="index.html" method="post">
+              <div class="row">
+                <input type="text" name="NAME" placeholder="Как вас зовут?" value="">
+              </div>
+              <div class="row two-cell-row">
+                <div class="input-cell">
+                  <input type="text" name="PHONE" placeholder="Номер телефона" value="">
+                </div>
+                <div class="input-cell">
+                  <input type="text" placeholder="E-mail" name="EMAIL" value="">
+                </div>
+              </div>
+              <div class="row">
+                <textarea name="TEXT" placeholder="Ваш вопрос?"></textarea>
+              </div>
+              <div class="row button-row">
+                <button type="button"  class="detail-btn-red" name="button">Отправить</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <!--end form add reveiws-->
+    </div>
+  </div>
+  <div class="ya-map">
+
+  </div>
+</div>
+{% endblock %}

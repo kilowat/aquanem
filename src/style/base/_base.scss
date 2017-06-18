@@ -79,3 +79,18 @@ i{
     font-weight: 300px;
   }
 }
+.table{
+  display: table;
+}
+.table-row{
+  display: table-row;
+}
+.table-cell{
+  display: table-cell;
+}
+a{
+  color: #0b4e78;
+  &:hover{
+    color: $link-hover-color;
+  }
+}
