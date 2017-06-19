@@ -9,6 +9,11 @@
     float: left;
     width: 49%;
     text-align: right;
+    @include breakpoint(max-width $desktop-width){
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
     .block-wrapper{
       display: inline-block;
       text-align: left;
@@ -31,6 +36,11 @@
   .right-block{
     float: right;
     width: 49%;
+    @include breakpoint(max-width $desktop-width){
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
   }
   .ya-map{
     height: 380px;
