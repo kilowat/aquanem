@@ -1,0 +1,34 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+{% include './../components/breadcrumbs.html'%}
+
+<h1 class="section-header">Новости</h1>
+
+<!--start compnent company news-->
+  <div class="company-news">
+    <div class="wrapper">
+      <div class="company-news-list">
+        <!--foreach $arResult-->
+          {% for item in newsItem%}
+          <div class="item">
+            <div class="pic">
+              <a href="#" title=""><img src="{{item.img}}" alt=""></a>
+            </div>
+            <div class="item-content">
+              <div class="name">
+                <a href="#" title="">{{item.name}}</a>
+              </div>
+              <div class="date">{{item.date}}</div>
+              <div class="text">
+                {{item.text}}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        <!--endforeach-->
+      </div>
+    </div>
+  </div>
+<!--end component copany news-->
+{% endblock %}

@@ -1,0 +1,71 @@
+.company-news{
+  .company-news-list{
+    @include container;
+    .item{
+      margin-bottom: 30px;
+      @include gallery(1 of 3 0.2);
+      @include breakpoint(max-width $desktop-width){
+        @include gallery(1 of 2 0.2);
+      }
+      @include breakpoint(max-width $phone-width){
+        margin-left:0!important;
+        margin-right: 0!important;
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+      .pic{
+        float: left;
+        margin-right: 3%;
+        width: 39%;
+        @include breakpoint(max-width $phone-width){
+          margin-right: 0;
+          float:none;
+          width: 100%;
+        }
+        img{
+          max-width: 100%;
+        }
+      }
+      .item-content{
+        float: left;
+        width: 58%;
+        @include breakpoint(max-width $phone-width){
+          margin-right: 0;
+          float:none;
+          width: 100%;
+        }
+        .name{
+          margin-bottom: 5px;
+          a{
+            text-decoration: none;
+            line-height: 1.2rem;
+          }
+        }
+        .date{
+          font-size: 0.9rem;
+          font-weight: 300;
+          color: #7d7d7d;
+          padding-bottom: 5px;
+          &:after {
+            content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+            display: block;
+            height: 5px;
+            overflow: hidden;
+            line-height: 0;
+            padding-top: 5px;
+          }
+          @include breakpoint(max-width $phone-width){
+            &:after {
+              display: none;
+            }
+          }
+        }
+        .text{
+          color: #7d7d7d;
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+}
