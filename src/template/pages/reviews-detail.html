@@ -1,0 +1,42 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+{% include './../components/breadcrumbs.html'%}
+
+<h1 class="section-header">Отзывы детальная</h1>
+<!--start component reviews detail-->
+<div class="reviews-detail">
+  <div class="wrapper">
+    <div class="reviews-detail-wrapper">
+      <div class="pic">
+        <img src="./images/rev-2.jpg" alt="">
+      </div>
+      <div class="content">
+        <div class="name">Алексндр Петрович Иванов</div>
+        <div class="date">13 сентября 2017 г.</div>
+        <div class="post">Генеральный директор ООО Техносклад</div>
+        <div class="project-link">
+          Проект: <a href="#" title="">Очистительный комплекс для торговой компании</a>
+        </div>
+        <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+    <div class="download-row">
+      <div class="download-header">
+        Скачать скан письменного отзыва:
+      </div>
+      <ul>
+        <li><a href="" title=""><i class="ic-download"></i> Файл.zip (178 кб.)</a></li>
+        <li><a href="" title=""><i class="ic-download"></i> Файл.zip (178 кб.)</a></li>
+        <li><a href="" title=""><i class="ic-download"></i> Файл.zip (178 кб.)</a></li>
+        <li><a href="" title=""><i class="ic-download"></i> Файл.zip (178 кб.)</a></li>
+        <li><a href="" title=""><i class="ic-download"></i> Файл.zip (178 кб.)</a></li>
+        <li><a href="" title=""><i class="ic-download"></i> Файл.zip (178 кб.)</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--end component reviews detail-->
+{% endblock %}

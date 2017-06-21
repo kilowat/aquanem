@@ -1,0 +1,103 @@
+.reviews-detail{
+  .reviews-detail-wrapper{
+    @include clearfix;
+    @include breakpoint(max-width $phone-width){
+      text-align: center;
+    }
+    .pic{
+      width: 19%;
+      float: left;
+      margin-right: 1%;
+      @include breakpoint(max-width $phone-width){
+        float: none;
+        width: 100%;
+        margin-right: 0;
+      }
+      img{
+        max-width: 100%;
+      }
+    }
+    .content{
+      float: left;
+      width: 80%;
+      @include breakpoint(max-width $phone-width){
+        float: none;
+        width: 100%;
+        margin-right: 0;
+      }
+      .name{
+        margin-bottom: 20px;
+        a{
+          text-decoration: none;
+          color: #000;
+          &:hover{
+            color: $link-hover-color;
+          }
+        }
+      }
+      .date{
+        color: #7d7d7d;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+      .post{
+        color: #7d7d7d;
+        font-weight: 300;
+        font-style: italic;
+          &::after {
+          content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+          display: block;
+          height: 7px;
+          overflow: hidden;
+          line-height: 0;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+      .project-link{
+        margin-bottom: 20px;
+      }
+      .text{
+        color: #7d7d7d;
+        line-height: 1.3rem;
+      }
+    }
+  }
+  .download-row{
+    @include clearfix;
+    @include breakpoint(max-width $phone-width){
+      text-align: center;
+    }
+    .download-header{
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+        margin-bottom: 5px;
+        a>*{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        i{
+          margin-right: 5px;
+        }
+        a{
+          text-decoration: none;
+          color: #486f8e;
+          font-weight: 300;
+          font-size: 0.9rem;
+          &:hover{
+            color: $link-hover-color;
+            i{
+              @include sprite($ic-download-hover);
+            }
+          }
+        }
+      }
+    }
+  }
+}

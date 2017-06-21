@@ -16,17 +16,17 @@
       {% for item in reviewsList%}
         <div class="item">
           <div class="pic">
-            <img src="{{item.img}}" alt="">
+            <a href="./reviews-detail.html" title="#"><img src="{{item.img}}" alt=""></a>
           </div>
           <div class="item-content">
             <div class="name">
-              <a href="#" title="">{{item.name}}</a>
+              <a href="./reviews-detail.html" title="">{{item.name}}</a>
             </div>
             <div class="post">{{item.post}}</div>
             <div class="text">{{item.text}}</div>
             <div class="date">{{item.date}}</div>
             <div class="detail-btn-row">
-                <a href="#" title="" class="detail-link detail-btn">Подробнее <i class="ic-arrow"></i></a>
+                <a href="./reviews-detail.html" title="" class="detail-link detail-btn">Подробнее <i class="ic-arrow"></i></a>
             </div>
           </div>
         </div>

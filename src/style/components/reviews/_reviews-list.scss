@@ -3,7 +3,19 @@
     @include container;
     .item{
       margin-bottom: 30px;
+      @include clearfix;
       @include gallery(1 of 3 0.1);
+      @include breakpoint(max-width $middle-width){
+        @include gallery(1 of 2 0.1);
+      }
+      @include breakpoint(max-width $small-width){
+        @include gallery(1 of 1 0);
+        float: none;
+        margin-right: 0!important;
+        margin-left: 0!important;
+        width: 100%;
+      }
+
       .pic{
         float: left;
         width: 35%;
@@ -16,6 +28,43 @@
       .item-content{
         float: left;
         width: 63%;
+        .name{
+          margin-bottom: 5px;
+          a{
+            text-decoration: none;
+            color:#000;
+            &:hover{
+              color: $link-hover-color;
+            }
+          }
+        }
+        .post{
+          color: #7d7d7d;
+          font-style:italic;
+          font-weight: 300;
+          &:after {
+            content: ". . . . . . . . . . . . . . . . . . . . . . . . . . .";
+            display: block;
+            height: 7px;
+            overflow: hidden;
+            line-height: 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+        }
+        .text{
+          color: #7d7d7d;
+          font-weight: 300;
+          line-height: 1.3rem;
+        }
+        .date{
+          margin-top:20px;
+          color: #7d7d7d;
+          font-weight: 300;
+        }
+        .detail-btn-row{
+          margin-top:10px;
+        }
       }
     }
   }
