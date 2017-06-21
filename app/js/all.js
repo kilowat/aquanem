@@ -1,6 +1,12 @@
 
 $(document).ready(function(){
 
+  $('.top-menu-block>ul>li>ul').hover(function(){
+    $(this).prev().addClass('hovered');
+  });
+  $('.top-menu-block>ul>li>ul').mouseleave(function(){
+    $(this).prev().removeClass('hovered');
+  });
   $('.slider-main').bxSlider();
 
   $('.portfolio-slider .bxslider').bxSlider({
