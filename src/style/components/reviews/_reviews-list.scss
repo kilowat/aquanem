@@ -1,0 +1,22 @@
+.reviews-cmp{
+  .reviews-list{
+    @include container;
+    .item{
+      margin-bottom: 30px;
+      @include gallery(1 of 3 0.1);
+      .pic{
+        float: left;
+        width: 35%;
+        margin-right: 2%;
+        img{
+          max-width: 100%;
+          border-radius: 100%;
+        }
+      }
+      .item-content{
+        float: left;
+        width: 63%;
+      }
+    }
+  }
+}
