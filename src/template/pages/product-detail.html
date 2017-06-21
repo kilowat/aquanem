@@ -1,0 +1,85 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+{% include './../components/breadcrumbs.html'%}
+
+<h1 class="section-header">Товар детальная</h1>
+<!--start component product detail-->
+<div class="product-detail">
+  <div class="wrapper">
+    <div class="product-detail-top-content">
+      <div class="product-detail-pic">
+        <div class="product-detail-slider">
+
+          <ul class="bxslider">
+            <li><img src="./images/portfolio-slider-big.jpg" t/></li>
+            <li><img src="./images/portfolio-slider-big.jpg" /></li>
+            <li><img src="./images/portfolio-slider-big.jpg" /></li>
+            <li><img src="./images/portfolio-slider-big.jpg" /></li>
+            <li><img src="./images/portfolio-slider-big.jpg" /></li>
+            <li><img src="./images/portfolio-slider-big.jpg" /></li>
+          </ul>
+
+          <div class="bx-pager">
+            <a data-slide-index="0" href=""><img src="./images/portfolio-slider-min.jpg" /></a>
+            <a data-slide-index="1" href=""><img src="./images/portfolio-slider-min.jpg" /></a>
+            <a data-slide-index="2" href=""><img src="./images/portfolio-slider-min.jpg" /></a>
+            <a data-slide-index="3" href=""><img src="./images/portfolio-slider-min.jpg" /></a>
+            <a data-slide-index="4" href=""><img src="./images/portfolio-slider-min.jpg" /></a>
+            <a data-slide-index="5" href=""><img src="./images/portfolio-slider-min.jpg" /></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="right-block">
+        <div class="order-form">
+          <form class="" action="index.html" method="post">
+            <div class="row">
+              <div class="form-title">
+                Вы можете заказать<br>
+                консультацию специалиста<br>
+                по данной услуге<br>
+              </div>
+            </div>
+            <div class="row">
+              <input type="text" placeholder="Как вас зовут?" name="NAME" value="">
+            </div>
+            <div class="row">
+              <input type="text" placeholder="Номер телефона" name="PHONE" value="">
+            </div>
+            <div class="row">
+              <input type="text" placeholder="E-mail" name="EMAIL" value="">
+            </div>
+            <div class="row text-center">
+              <button type="submit" name="button" class="make-order-blue-btn">Заказать</button>
+            </div>
+          </form>
+        </div>
+        <div class="price-row">
+          <span>Цена от:</span> <span class="price">12 000 <span class="ruble-mark">Р</span></span>
+        </div>
+        <div class="props-block">
+          <h2 class="block-name">
+            Характеристики
+          </h2>
+          <ul class="prop-list">
+            <li>
+              <span class="text">Название характеристики</span>
+              <span class="value">Значение</span>
+            </li>
+            <li>
+              <span class="text">Название характеристики 22</span>
+              <span class="value">Значение 22</span>
+            </li>
+            <li>
+              <span class="text">Название характеристики 3333 33</span>
+              <span class="value">Значение 33</span>
+            </li>
+           <ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end component product detail-->
+{% endblock %}

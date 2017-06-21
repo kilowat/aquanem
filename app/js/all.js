@@ -14,7 +14,10 @@ $(document).ready(function(){
     captions: true,
     slideWidth: 737
   });
-
+  $('.product-detail-slider .bxslider').bxSlider({
+    pagerCustom: '.product-detail-slide .bx-pager',
+    captions: true,
+  });
   $('.pather .pather-list').slick({
     dots: false,
      infinite: false,
