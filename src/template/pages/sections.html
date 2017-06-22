@@ -1,0 +1,30 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+{% include './../components/breadcrumbs.html'%}
+
+<h1 class="section-header">Каталог</h1>
+<!--start compnent section list-->
+<div class="sections">
+  <div class="wrapper">
+    <div class="section-list">
+      <!--foreach $arResult-->
+      <div class="item">
+        <div class="name">
+          <a href="#" title=""><img src="./images/sections.png" alt="">Корневой раздел</a>
+        </div>
+        <div class="subsection">
+          <a href="#" title=""><img src="./images/sub-sections.png" alt="">Умягчители(26)</a>
+          <a href="#" title=""><img src="./images/sub-sections.png" alt="">Умягчители(26)</a>
+          <a href="#" title=""><img src="./images/sub-sections.png" alt="">Умягчители(26)</a>
+          <a href="#" title=""><img src="./images/sub-sections.png" alt="">Умягчители(26)</a>
+          <a href="#" title=""><img src="./images/sub-sections.png" alt="">Умягчители(26)</a>
+          <a href="#" title=""><img src="./images/sub-sections.png" alt="">Умягчители(26)</a>
+        </div>
+      </div>
+      <!--endforeach-->
+    </div>
+  </div>
+</div>
+<!--end component section list-->
+{% endblock %}
