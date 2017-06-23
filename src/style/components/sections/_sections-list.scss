@@ -1,6 +1,10 @@
 .sections{
   .section-list{
     .item{
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      position: relative;
+      border-bottom: 1px dashed #0b4e78;
       .name{
         margin-bottom: 20px;
         a{

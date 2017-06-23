@@ -1,0 +1,90 @@
+.search{
+  .row{@include clearfix;}
+  .search-row{
+    padding-bottom: 25px;
+
+    .table{
+      max-width: 390px;
+      margin: auto;
+      width: 100%;
+      .table-cell{
+        padding-right: 5px;
+        padding-left: 5px;
+        &:first-child{
+          width: 15%;
+        }
+      }
+    }
+    #search-input{
+      border-radius: 4px;
+      border: 1px solid #a6b9ca;
+      padding-left: 10px;
+      height: 37px;
+      box-sizing: border-box;
+      width: 100%;
+      &:focus{
+        border-color: #3888c7;
+        box-shadow: 0 0 2px 0 #3888c7;
+      }
+    }
+  }
+  .search-query{
+    float: left;
+    .search-query-row{
+      margin-bottom: 5px;
+      .search-label{
+        font-weight: 300;
+      }
+      .search-stirng{
+        font-style: italic;
+        font-weight: 300;
+      }
+    }
+    .search-result-row{
+      b{
+        font-weight: 600;
+      }
+    }
+  }
+  .order-block{
+    float: right;
+  }
+  .search-list{
+    margin-top: 50px;
+    .item{
+      @include clearfix;
+      margin-bottom: 30px;
+      .pic{
+        float: left;
+        margin-right: 10px;
+      }
+      .name{
+        margin-bottom: 20px;
+        a{
+          font-size: 1.05rem;
+          color: #0b4e78;
+        }
+      }
+      .text{
+        color: #7d7d7d;
+        line-height: 1.3rem;
+        margin-bottom: 10px;
+      }
+    }
+    .dotted{
+      padding-top: 30px;
+      color: #a6b9ca;
+      height: 15px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      span{
+        &:after{
+          content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+          display: block;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ $(document).ready(function(){
     $(this).prev().removeClass('hovered');
   });
 
-  $('#simpleDrawer').simpleDrawer();
+  $('#simpleDrawer').simpleDrawer({width:220});
   $('#simpleDrawer').show();
   $('.slider-main').bxSlider();
 

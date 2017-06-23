@@ -12,21 +12,34 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 #simpleDrawer ul li a {
-  border-bottom: 1px solid;
-  color: black;
+  color: #0b4e78;
+  text-transform: uppercase;
   display: block;
   padding-bottom: 7px;
   padding-top: 7px;
   text-decoration: none;
-  padding-left: 25px;
-
+  position: relative;
+  &:after {
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+    display: block;
+    height: 7px;
+    overflow: hidden;
+    line-height: 0;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #0b4e78!important;
+  }
 }
-#simpleDrawer ul li a:hover, #simpleDrawer ul li a:active{
-  background-color: #ccc;
+#simpleDrawer ul li a:hover, #simpleDrawer ul li a:active #simpleDrawer ul li a.selected{
+  color: $link-hover-color;
 }
 .drawer-hamburger {
+  display: none;
   top: 0px;
   margin-top: 25px;
   cursor: pointer;
@@ -37,6 +50,26 @@
   height: 44px;
   border: 2px solid #e94d3e;
   border-radius: 10px;
+  @include breakpoint(max-width $desktop-width){
+    display: block;
+  }
+  .hamburger-line{
+    position: absolute;
+    height: 2px;
+    width:25px;
+    left: 10px;
+    display: block;
+    background-color: #e94d3e;
+    &:first-child{
+      top:11px;
+    }
+    &:nth-child(2){
+      top:21px;
+    }
+    &:nth-child(3){
+      top: 31px;
+    }
+  }
 }
 
 .drawer-close,

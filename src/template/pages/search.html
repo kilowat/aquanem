@@ -1,0 +1,79 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+{% include './../components/breadcrumbs.html'%}
+
+<h1 class="section-header">Результаты поиска</h1>
+<div class="section-text">
+  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Букв дал последний взгляд на берегу собрал первую коварный там свой которое переписывается вскоре диких, назад пунктуация сих, журчит рыбного семь?
+</div>
+
+<!--start component search-->
+<div class="search">
+  <div class="wrapper">
+    <div class="search-row">
+      <div class="table">
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="search-input">Поиск:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" name="" value="" id="search-input">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="search-query">
+        <div class="search-query-row">
+          <span class="search-label">По вашему запросу:</span> <span class="search-stirng">"<span id="search-phrase">Фильтрация</span>"</span>
+        </div>
+        <div class="search-result-row">
+          <b>найдено <span id="search-count">46</span> результатов</b>
+        </div>
+      </div>
+      <div class="order-block">
+        <select class="" name="">
+          <option value="">Сначало релеватные</option>
+          <option value="">Сначало новые</option>
+        </select>
+      </div>
+    </div>
+    <div class="search-list">
+      <!--foreach $arResult-->
+      <div class="item">
+        <div class="pic">
+          <a href="#" title=""><img src="./images/news-img.jpg" alt=""></a>
+        </div>
+        <div class="name">
+          <a href="#" title="">Заголовок ссылки</a>
+        </div>
+        <div class="text">
+          Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Эта вопроса продолжил встретил но пунктуация, заглавных несколько своего подпоясал рукописи маленькая назад выйти образ над семантика это ты одна.
+        </div>
+        <div class="search-path">
+          <a href="#" title="">Главная</a> / <a href="#" title="">Информация</a>
+        </div>
+        <div class="dotted"><span></span></div>
+      </div>
+      <div class="item">
+        <div class="pic">
+          <a href="#" title=""><img src="./images/news-img.jpg" alt=""></a>
+        </div>
+        <div class="name">
+          <a href="#" title="">Заголовок ссылки</a>
+        </div>
+        <div class="text">
+          Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Эта вопроса продолжил встретил но пунктуация, заглавных несколько своего подпоясал рукописи маленькая назад выйти образ над семантика это ты одна.
+        </div>
+        <div class="search-path">
+          <a href="#" title="">Главная</a> / <a href="#" title="">Информация</a>
+        </div>
+      </div>
+      <!--endforeach-->
+    </div>
+  </div>
+
+</div>
+<!--end component search-->
+{% endblock %}
