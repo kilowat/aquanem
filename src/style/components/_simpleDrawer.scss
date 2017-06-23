@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   z-index: 101;
-    padding-top: 15px;
+  padding-top: 80px;
 }
 
 #simpleDrawer ul {
@@ -20,7 +20,7 @@
   padding-bottom: 7px;
   padding-top: 7px;
   text-decoration: none;
-  padding-left: 15px;
+  padding-left: 25px;
 
 }
 #simpleDrawer ul li a:hover, #simpleDrawer ul li a:active{
@@ -28,23 +28,24 @@
 }
 .drawer-hamburger {
   top: 0px;
-  margin-top: 15px;
+  margin-top: 25px;
   cursor: pointer;
-  left: 15px;
+  left: 25px;
   position: fixed;
-  background-image: url(../images/ic_open.png);
-  z-index: 100;
+  z-index: 1000;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #e94d3e;
+  border-radius: 10px;
 }
 
 .drawer-close,
 .drawer-hamburger {
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
+
 }
 
 .drawer-close {
-  background-image: url(../images/ic_close.png);
+
 }
 
 #drawer-overlay {
